@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="calculator.js"></script>
+  <title>Calculator</title>
+</head>
+
+<body>
+  <div class="flex-center">
+    <table>
+      <tr>
+        <td class="table-header" colspan="3"><input type="text" id="result" /></td>
+        <td class="table-header"><input id="clear" type="button" value="c" onclick="clr()" /></td>
+      </tr>
+      <tr>
+        <td><input id="one" type="button" value="1" onclick="appendOperand('1')" /></td>
+        <td><input id="two" type="button" value="2" onclick="appendOperand('2')" /></td>
+        <td><input id="three" type="button" value="3" onclick="appendOperand('3')" /></td>
+        <td><input id="divide" type="button" value="/" onclick="appendOperand('/')" /></td>
+      </tr>
+      <tr>
+        <td><input id="four" type="button" value="4" onclick="appendOperand('4')" /></td>
+        <td><input id="five" type="button" value="5" onclick="appendOperand('5')" /></td>
+        <td><input id="six" type="button" value="6" onclick="appendOperand('6')" /></td>
+        <td><input id="minus" type="button" value="-" onclick="appendOperand('-')" /></td>
+      </tr>
+      <tr>
+        <td><input id="seven" type="button" value="7" onclick="appendOperand('7')" /></td>
+        <td><input id="height" type="button" value="8" onclick="appendOperand('8')" /></td>
+        <td><input id="nine" type="button" value="9" onclick="appendOperand('9')" /></td>
+        <td><input id="plus" type="button" value="+" onclick="appendOperand('+')" /></td>
+      </tr>
+      <tr>
+        <td><input id="dot" type="button" value="." onclick="appendOperand('.')" /></td>
+        <td><input id="zero" type="button" value="0" onclick="appendOperand('0')" /></td>
+        <td><input id="equal" type="button" value="=" onclick="solve()" /></td>
+        <td><input id="multiply" type="button" value="*" onclick="appendOperand('*')" /></td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
